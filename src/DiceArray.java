@@ -16,8 +16,7 @@ public class DiceArray
 //Roll dice 1000 times
 		for(int i=0; i<1000; i++)
 		{
-			int roll = die1.roll() + die2.roll();
-			count[roll] += 1;
+			count[die1.roll() + die2.roll()]++;
 		}
 //Print array
 		for (int i=2; i<13; i++)
