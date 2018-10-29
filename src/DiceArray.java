@@ -6,7 +6,6 @@
  *
  */
 
-import java.util.Arrays;
 public class DiceArray 
 {
 	public static void main(String[] args) 
@@ -20,8 +19,11 @@ public class DiceArray
 			int roll = die1.roll() + die2.roll();
 			count[roll] += 1;
 		}
-//Print array using toString and Arrays class
-		System.out.print(Arrays.toString(count));
+//Print array
+		for (int i=2; i<13; i++)
+		{
+			System.out.println("" + i + " was rolled " + count[i] + " times.");
+		}
 	}
 
 }
