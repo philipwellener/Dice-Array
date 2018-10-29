@@ -22,7 +22,7 @@ public class DiceArray
 //Print array
 		for (int i=2; i<13; i++)
 		{
-			System.out.println("" + i + " was rolled " + count[i] + " times.");
+			System.out.println(i + " was rolled " + count[i] + " times.");
 		}
 	}
 
